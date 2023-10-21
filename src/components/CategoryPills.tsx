@@ -27,10 +27,6 @@ export default function CategoryPills({
       const container = entries[0]?.target;
       if (container === null) return;
 
-      console.log(
-        `width: ${container.clientWidth} scroll width: ${container.scrollWidth} translate: ${translate}`
-      );
-
       setIsLeftVisible(translate > 0);
       setIsRightVisible(
         translate + container.clientWidth < container.scrollWidth
